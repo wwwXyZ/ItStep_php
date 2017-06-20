@@ -1,0 +1,40 @@
+todo:
++	enable sqlite3 library
++	export db to file
++	make DOM
++	make sqlite3 connection
++	make funcional
+	api:
++		user_get
++		user_reg
++		user_del
++		get_interests
++		add_interes
++		user_update
++		user_search (only nick and phone)
++		user_search (only interests)
++		process user_search
+	js:
++		interests
++		fix_numberlist
++		dinamyc update interests list
++		dinamyc update users list
++		process user_adding
++		user_del
++		user_update
++		user_search
++		process user_search
++		fix bug with pattern
++	responsive design
++	fix numbers in JavaScript
+	html:
++		buttons as links
++		page_number
++		normal_format_data
++		get interests list
++		add error field
++		search_page
++		multi fucking paging
++		table
++	full security
+	
