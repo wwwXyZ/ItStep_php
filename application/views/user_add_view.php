@@ -21,7 +21,7 @@
 					?>
 				</select>
 			</span> <br />
-			<a href="/user/add_interes">Add interes</a><br>
+			<a class="button" href="/user/add_interes">Add interes</a><br>
 			<span style="display:none">
 				<input id="new_interes" type="text" name="new_interes" /> <input onclick="add_interes();" id="add_interes_btn" type="submit" value="Add interes!" /><br />
 			</span>

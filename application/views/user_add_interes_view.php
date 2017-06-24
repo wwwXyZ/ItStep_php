@@ -1,8 +1,12 @@
-<span style="top: 200px; position: absolute; left: 300px; color: #3A149A;">
-	<h3>Добавление интересов:</h3><br />
-	<input id="new_interes" type="text" name="new_interes" /> <input style="color: #3A149A;" onclick="add_interes();" id="add_interes_btn" type="submit" value="Add interes!" /><br />
-</span>
-<div id="bckg" style="background: #4A44AA; width:100%; height: 100%; position: fixed; z-index: -2;">
+<div class="border_half_page">
+	<div id="content_left" class="text_center">
+	<span>
+		<span style="display: block; margin-top:15%;">Добавление интересов:</span><br />
+		<input id="new_interes" type="text" name="new_interes" /><br />
+		<input style="" onclick="add_interes();" id="add_interes_btn" type="submit" value="Add interes!" /><br />
+	</span>
+
+	</div>
 </div>
 <script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
 <script>
@@ -33,7 +37,7 @@ function switchColor() {
             color += letters[Math.floor(Math.random() * 16)];
         }
 	$("#bckg").css('background', color);
-	setTimeout(switchColor, 100);
+	setTimeout(switchColor, 700);
 }
 //switchColor();
 </script>

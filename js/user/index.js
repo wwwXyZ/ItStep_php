@@ -198,7 +198,7 @@ if (user_page == true) {
 
 		$('.page_number').text(page);
 		var urlPatch = window.location.protocol + "//" + window.location.hostname + "/user/get/" + page + "/" + location.search;
-		document.getElementById('url').value = urlPatch;
+//		document.getElementById('url').value = urlPatch;
 		window.history.replaceState('', '', urlPatch);
 		//$('#url').attr('data-clipboard-text', urlPatch);
 		
@@ -288,16 +288,16 @@ if (user_page == true) {
 		$("#listing_self").empty();
 		for(var i = 0; i < current_page; i++)
 			if(i == page)
-				$("#listing_self").append('<button style="background-color: #f44336;" disabled="disabled">'+i+'</button>&nbsp;');
+				$("#listing_self").append('<button style="background-color: #b7b7b7;" disabled="disabled">'+i+'</button>&nbsp;');
 			else
-				$("#listing_self").append('<button style="background-color: #008CBA;" href="#" onclick="setPageAndUpdateUsers('+i+')">'+i+'</button>&nbsp;');
+				$("#listing_self").append('<button style="background-color: #ffffff;" href="#" onclick="setPageAndUpdateUsers('+i+')">'+i+'</button>&nbsp;');
 			if (page >= 0) 
 				next_available = true;
 			if (page >= current_page-1)
 				next_available = false;
 	}
 	$(function () {
-		new Clipboard('.cp');
+//		new Clipboard('.cp');
 		updateUsers(page);
 	});
 }

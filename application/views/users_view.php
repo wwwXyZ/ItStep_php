@@ -39,12 +39,12 @@
 		<div id="listing">
 			
 		
-			<button style="background-color: #4CAF50;" class="button" onclick="back_page();">back</button>&nbsp;<span id="listing_self"></span>&nbsp;<button style="background-color: #4CAF50;" class="button" onclick="next_page();">next</button>
+			<button style="background-color: #ffffff;" class="button" onclick="back_page();">back</button>&nbsp;<span id="listing_self"></span>&nbsp;<button style="background-color: #ffffff;" class="button" onclick="next_page();">next</button>
 			
 			<br />
-<!--			page: <span class="page_number"></span> --><hr>
+<!--			page: <span class="page_number"></span> <hr>
 			<br />
-			Url:<input type="text" value="" id="url" readonly /> <button class="cp button" data-clipboard-target="#url">Копировать!</button>
+			Url:<input type="text" value="" id="url" readonly /> <button class="cp button" data-clipboard-target="#url">Копировать!</button>-->
 		</div>
 	</div>
 </div>
