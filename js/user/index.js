@@ -222,7 +222,10 @@ if (user_page == true) {
 					//userOptions = notFoundStr;
 				}
 				for (key in msg.users) {
-					userOptions += "<br><tr class=\"five_cells\" id=\"user_ul_" + msg.users[key]['id'] + "\"><td>" + msg.users[key]['id'] + 
+					userOptions += "<br><tr data-toggle=\"tooltip\" title='";
+						for (key1 in msg.users[key]['interests'])
+							userOptions += msg.users[key]['interests'][key1]+"\n";
+					userOptions += "'\" class=\"five_cells\" id=\"user_ul_" + msg.users[key]['id'] + "\"><td>" + msg.users[key]['id'] + 
 									"</td><td>" + msg.users[key]['nick'] + 
 									"</td><td>" + msg.users[key]['age'] + 
 									"</td><td>" + msg.users[key]['phone'] +
@@ -299,5 +302,8 @@ if (user_page == true) {
 	$(function () {
 //		new Clipboard('.cp');
 		updateUsers(page);
+	});
+	$(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip();   
 	});
 }
